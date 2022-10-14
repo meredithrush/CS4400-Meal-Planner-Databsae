@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="mainpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d5d8db #d5d8db #d5d8db #d5d8db;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mealplanner.BrowseRecipeChefController">
+   <children>
+      <Text fill="#6786a1" layoutX="87.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diet Tags:" wrappingWidth="73.10552252672892">
+         <font>
+            <Font name="Hiragino Sans W2" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#6786a1" layoutX="95.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cuisines:" wrappingWidth="77.69625311281698">
+         <font>
+            <Font name="Hiragino Sans W2" size="13.0" />
+         </font>
+      </Text>
+      <Button layoutX="161.0" layoutY="129.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addDT" prefHeight="17.0" prefWidth="17.0" text="+" textAlignment="CENTER" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W5" size="8.0" />
+         </font>
+      </Button>
+      <Button layoutX="161.0" layoutY="158.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addCuis" prefHeight="17.0" prefWidth="17.0" text="+" textAlignment="CENTER" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W5" size="8.0" />
+         </font>
+      </Button>
+      <Button layoutX="22.0" layoutY="23.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#back" prefHeight="18.0" prefWidth="41.0" text="Back" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W5" size="9.0" />
+         </font>
+      </Button>
+      <Button layoutX="525.0" layoutY="23.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#logOff" prefHeight="18.0" prefWidth="61.0" text="Log Off" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W5" size="9.0" />
+         </font>
+      </Button>
+      <Text fill="#40586b" layoutX="51.0" layoutY="85.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Browse Recipes" textAlignment="CENTER" wrappingWidth="508.0">
+         <font>
+            <Font name="Hiragino Sans W3" size="48.0" />
+         </font>
+      </Text>
+      <TableView fx:id="recipeTable" layoutX="24.0" layoutY="184.0" prefHeight="182.0" prefWidth="552.0">
+         <columns>
+            <TableColumn fx:id="tableID" prefWidth="56.822418212890625" text="ID" />
+            <TableColumn fx:id="tableName" prefWidth="61.02717590332031" text="Name" />
+            <TableColumn fx:id="tableAuthor" prefWidth="100.97283935546875" text="Author" />
+            <TableColumn fx:id="tableCuisines" prefWidth="75.0" text="Cuisines" />
+            <TableColumn fx:id="tableDietTags" prefWidth="62.07843017578125" text="Diet Tags" />
+            <TableColumn fx:id="tableAvgRating" prefWidth="99.92160034179688" text="AVG Rating" />
+            <TableColumn fx:id="tablePercentOwned" prefWidth="75.0" text="\% Owned" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button layoutX="95.0" layoutY="366.0" mnemonicParsing="false" onAction="#sortAscRat" text="Asc. Rating" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W5" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="198.0" layoutY="366.0" mnemonicParsing="false" onAction="#sortDescRat" text="Desc. Rating" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W5" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="305.0" layoutY="366.0" mnemonicParsing="false" onAction="#sortAscP" text="Asc. % Owned" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W5" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="426.0" layoutY="366.0" mnemonicParsing="false" onAction="#sortDescP" text="Desc. % Owned" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W5" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="426.0" layoutY="135.0" mnemonicParsing="false" onAction="#filter" text="Filter" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W5" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

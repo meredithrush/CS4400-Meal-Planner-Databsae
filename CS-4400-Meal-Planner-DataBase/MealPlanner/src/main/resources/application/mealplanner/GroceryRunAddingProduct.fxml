@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d5d8db #d5d8db;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mealplanner.GroceryRunAddingProductController">
+   <children>
+      <Button layoutX="12.0" layoutY="13.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#back" prefHeight="18.0" prefWidth="41.0" text="Back" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W5" size="9.0" />
+         </font>
+      </Button>
+      <Button layoutX="525.0" layoutY="12.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#logOff" prefHeight="18.0" prefWidth="61.0" text="Log Off" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W5" size="9.0" />
+         </font>
+      </Button>
+      <Text fill="#40586b" layoutX="14.0" layoutY="91.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Grocery Runs -" textAlignment="CENTER" wrappingWidth="261.0">
+         <font>
+            <Font name="Hiragino Sans W3" size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="date" layoutX="222.0" layoutY="64.0" prefHeight="39.0" prefWidth="346.0" text="MM/DD/YYYY" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W3" size="20.0" />
+         </font>
+      </Label>
+      <Text fill="#6786a1" layoutX="369.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meals Being Shopped For">
+         <font>
+            <Font name="Hiragino Sans W2" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#6786a1" layoutX="114.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Checklist">
+         <font>
+            <Font name="Hiragino Sans W2" size="13.0" />
+         </font>
+      </Text>
+      <TableView fx:id="productCheckTable" layoutX="25.0" layoutY="149.0" prefHeight="200.0" prefWidth="276.0">
+        <columns>
+          <TableColumn fx:id="prodName" prefWidth="97.54412651062012" text="Name" />
+          <TableColumn fx:id="prodAmt" prefWidth="77.95589447021484" text="Amount" />
+            <TableColumn fx:id="prodCheck" prefWidth="100.24240112304688" text="Add Product?" />
+        </columns>
+      </TableView>
+      <TableView fx:id="shoppingMeals" layoutX="320.0" layoutY="149.0" prefHeight="200.0" prefWidth="261.0">
+        <columns>
+          <TableColumn fx:id="recipeName" prefWidth="62.543212890625" text="Recipe" />
+          <TableColumn fx:id="recipeDate" prefWidth="87.456787109375" text="Date Planned" />
+            <TableColumn fx:id="recipeCheck" prefWidth="82.0" text="Add Recipe?" />
+            <TableColumn fx:id="recipeID" minWidth="0.0" prefWidth="27.5" text="ID" />
+        </columns>
+      </TableView>
+      <Button layoutX="385.0" layoutY="358.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addProductsToList" prefHeight="18.0" prefWidth="130.0" text="Add To Grocery List" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W5" size="9.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

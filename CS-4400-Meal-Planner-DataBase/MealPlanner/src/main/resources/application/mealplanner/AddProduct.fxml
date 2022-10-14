@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="mainpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d5d8db #d5d8db #d5d8db;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mealplanner.AddProductController">
+   <children>
+      <Text boundsType="LOGICAL_VERTICAL_CENTER" fill="#40586b" layoutX="58.0" layoutY="94.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Product" textAlignment="CENTER" wrappingWidth="484.0">
+         <font>
+            <Font name="Hiragino Sans W3" size="48.0" />
+         </font>
+      </Text>
+      <Button layoutX="17.0" layoutY="14.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#back" prefHeight="18.0" prefWidth="41.0" text="Back" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W5" size="9.0" />
+         </font>
+      </Button>
+      <Button layoutX="525.0" layoutY="14.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#logOff" prefHeight="18.0" prefWidth="61.0" text="Log Off" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W5" size="9.0" />
+         </font>
+      </Button>
+      <TextField fx:id="name" layoutX="189.0" layoutY="136.0" prefHeight="20.0" prefWidth="148.0" />
+      <Text fill="#6786a1" layoutX="141.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" wrappingWidth="49.66899871826172">
+         <font>
+            <Font name="Hiragino Sans W2" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#6786a1" layoutX="140.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Types:" wrappingWidth="49.66899871826172">
+         <font>
+            <Font name="Hiragino Sans W2" size="13.0" />
+         </font>
+      </Text>
+      <Button layoutX="191.0" layoutY="213.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addTy" prefHeight="17.0" prefWidth="17.0" text="+" textAlignment="CENTER" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W5" size="8.0" />
+         </font>
+      </Button>
+      <Button layoutX="192.0" layoutY="269.0" mnemonicParsing="false" onAction="#save" text="Save" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W5" size="13.0" />
+         </font>
+      </Button>
+      <Text fill="#6786a1" layoutX="146.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tool?" wrappingWidth="49.66899871826172">
+         <font>
+            <Font name="Hiragino Sans W2" size="13.0" />
+         </font>
+      </Text>
+      <ToggleButton fx:id="toolYes" layoutX="191.0" layoutY="238.0" mnemonicParsing="false" text="Yes" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W5" size="12.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="Tool" />
+         </toggleGroup>
+      </ToggleButton>
+      <ToggleButton fx:id="toolNo" layoutX="231.0" layoutY="238.0" mnemonicParsing="false" text="No" textFill="#40586b" toggleGroup="$Tool">
+         <font>
+            <Font name="Hiragino Sans W5" size="12.0" />
+         </font>
+      </ToggleButton>
+      <TextField fx:id="units" layoutX="189.0" layoutY="173.0" prefHeight="20.0" prefWidth="148.0" />
+      <Text fill="#6786a1" layoutX="145.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Units:" wrappingWidth="49.66899871826172">
+         <font>
+            <Font name="Hiragino Sans W2" size="13.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d5d8db;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mealplanner.RecipeController">
+   <children>
+      <Label fx:id="name" alignment="CENTER" layoutY="55.0" prefHeight="49.0" prefWidth="600.0" text="Recipe" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W3" size="48.0" />
+         </font>
+      </Label>
+      <Button layoutX="16.0" layoutY="14.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#back" prefHeight="18.0" prefWidth="41.0" text="Back" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W5" size="9.0" />
+         </font>
+      </Button>
+      <Button layoutX="524.0" layoutY="14.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#logOff" prefHeight="18.0" prefWidth="61.0" text="Log Off" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W5" size="9.0" />
+         </font>
+      </Button>
+      <Label layoutX="209.0" layoutY="111.0" prefHeight="13.0" prefWidth="71.0" text="AVG Rating:" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W3" size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="avgRating" layoutX="277.0" layoutY="112.0" prefHeight="13.0" prefWidth="55.0" text="X.X" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W3" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="112.0" prefHeight="13.0" prefWidth="38.0" text="/5.0" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W3" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="134.0" prefHeight="13.0" prefWidth="71.0" text="Author:" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W3" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="165.0" prefHeight="13.0" prefWidth="71.0" text="Diet Tags:" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W3" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="194.0" prefHeight="13.0" prefWidth="71.0" text="Cuisines:" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W3" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="223.0" prefHeight="13.0" prefWidth="71.0" text="Instructions:" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W3" size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="author" layoutX="112.0" layoutY="135.0" prefHeight="13.0" prefWidth="221.0" text="XXXXXXXX" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W3" size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="instructions" alignment="TOP_LEFT" layoutX="138.0" layoutY="223.0" prefHeight="172.0" prefWidth="239.0" textFill="#40586b" wrapText="true">
+         <font>
+            <Font name="Hiragino Sans W3" size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="dietTag" layoutX="124.0" layoutY="165.0" prefHeight="13.0" prefWidth="221.0" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W3" size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="cuisines" layoutX="119.0" layoutY="194.0" prefHeight="13.0" prefWidth="221.0" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W3" size="11.0" />
+         </font>
+      </Label>
+      <TableView fx:id="productTable" layoutX="385.0" layoutY="136.0" prefHeight="250.0" prefWidth="201.0">
+        <columns>
+          <TableColumn fx:id="productName" prefWidth="103.38003540039062" text="Name" />
+          <TableColumn fx:id="productAmount" prefWidth="93.61990356445312" text="Amount" />
+        </columns>
+      </TableView>
+      <Hyperlink layoutX="338.0" layoutY="109.0" onAction="#seeReviews" text="See Reviews">
+         <font>
+            <Font name="Hiragino Sans W3" size="11.0" />
+         </font></Hyperlink>
+   </children>
+</Pane>

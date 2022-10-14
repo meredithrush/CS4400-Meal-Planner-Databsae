@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d5d8db #d5d8db;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mealplanner.GroceryRunController">
+   <children>
+      <Button layoutX="12.0" layoutY="13.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#back" prefHeight="18.0" prefWidth="41.0" text="Back" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W5" size="9.0" />
+         </font>
+      </Button>
+      <Button layoutX="525.0" layoutY="12.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#logOff" prefHeight="18.0" prefWidth="61.0" text="Log Off" textFill="#40586b">
+         <font>
+            <Font name="Hiragino Sans W5" size="9.0" />
+         </font>
+      </Button>
+      <Text fill="#40586b" layoutX="170.0" layoutY="81.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Grocery Runs" textAlignment="CENTER" wrappingWidth="261.0">
+         <font>
+            <Font name="Hiragino Sans W3" size="30.0" />
+         </font>
+      </Text>
+      <TableView fx:id="groceryRunTable" layoutX="201.0" layoutY="109.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="tableID" prefWidth="101.0" text="ID" />
+          <TableColumn fx:id="tableDate" prefWidth="98.0" text="Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="268.0" layoutY="321.0" mnemonicParsing="false" onAction="#newRun" text="New Run" />
+   </children>
+</Pane>
